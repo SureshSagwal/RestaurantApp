@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N0g-SY-GgK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.82352941180000006" green="0.83921568629999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHp-hE-zTN">
+                    <rect key="frame" x="279" y="22" width="32" height="32"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="VkC-Mg-pr2"/>
+                        <constraint firstAttribute="width" constant="32" id="xQG-bO-TPl"/>
+                    </constraints>
+                    <state key="normal" image="heart_icon_default.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="heart_icon_fill.png"/>
+                </button>
+                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="xj1-Uy-UU0">
+                    <rect key="frame" x="14" y="81" width="60" height="60"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="2fo-f0-xPO"/>
+                        <constraint firstAttribute="width" constant="60" id="RK9-8K-nZi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berco's(Golf Course Road)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpl-gz-UWE">
+                    <rect key="frame" x="82" y="120" width="216" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2Hb-Bb-N29"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAy-bG-Gx0">
+                    <rect key="frame" x="82" y="95" width="179" height="27"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="hNv-0j-PUV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="N0g-SY-GgK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8KB-eQ-NJN"/>
+                <constraint firstAttribute="trailing" secondItem="jHp-hE-zTN" secondAttribute="trailing" constant="9" id="HPx-ia-tGM"/>
+                <constraint firstAttribute="trailing" secondItem="Cpl-gz-UWE" secondAttribute="trailing" constant="22" id="Kmj-89-QyD"/>
+                <constraint firstItem="EAy-bG-Gx0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="95" id="OsH-Gf-gU6"/>
+                <constraint firstItem="xj1-Uy-UU0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="P0F-Ta-cC5"/>
+                <constraint firstItem="Cpl-gz-UWE" firstAttribute="leading" secondItem="xj1-Uy-UU0" secondAttribute="trailing" constant="8" id="QgY-zr-XDT"/>
+                <constraint firstItem="xj1-Uy-UU0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="81" id="Tn6-fm-99v"/>
+                <constraint firstAttribute="trailing" secondItem="EAy-bG-Gx0" secondAttribute="trailing" constant="59" id="d6c-XM-ARf"/>
+                <constraint firstItem="EAy-bG-Gx0" firstAttribute="leading" secondItem="xj1-Uy-UU0" secondAttribute="trailing" constant="8" id="mgG-1L-qsB"/>
+                <constraint firstAttribute="bottom" secondItem="N0g-SY-GgK" secondAttribute="bottom" id="mzC-dd-hEl"/>
+                <constraint firstItem="jHp-hE-zTN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="sW4-PD-CZ6"/>
+                <constraint firstItem="N0g-SY-GgK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vAL-pn-DfT"/>
+                <constraint firstAttribute="trailing" secondItem="N0g-SY-GgK" secondAttribute="trailing" id="voV-aH-pdM"/>
+                <constraint firstItem="Cpl-gz-UWE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="wdi-0I-XhF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="187" y="465"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="company_logo.png" width="67" height="67"/>
+        <image name="heart_icon_default.png" width="27" height="24"/>
+        <image name="heart_icon_fill.png" width="27" height="24"/>
+    </resources>
+</document>
